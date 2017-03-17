@@ -20,6 +20,7 @@ class ViewController: UIViewController , UINavigationControllerDelegate ,UIImage
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
+            imageView.contentMode = .scaleAspectFit
             imageView.image = image
         } else {
             // Error Message
@@ -45,6 +46,12 @@ class ViewController: UIViewController , UINavigationControllerDelegate ,UIImage
     }
 
     @IBAction func pickImageFromCamera(_ sender: UIBarButtonItem) {
+        
+        imagePicker.delegate = self
+        imagePicker.allowsEditing = true
+        imagePicker.sourceType = UIImagePickerControllerSourceType.camera
+        self.present(imagePicker, animated: true, completion: nil)
+        
     }
     @IBAction func pickImageFromURL(_ sender: UIBarButtonItem) {
     }
