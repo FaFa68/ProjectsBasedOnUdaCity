@@ -13,6 +13,8 @@ class ViewController: UIViewController , UINavigationControllerDelegate ,UIImage
     
     @IBOutlet weak var imageView: UIImageView!
     let imagePicker = UIImagePickerController()
+    @IBOutlet weak var textLabel: UILabel!
+    @IBOutlet weak var textField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -53,7 +55,37 @@ class ViewController: UIViewController , UINavigationControllerDelegate ,UIImage
         self.present(imagePicker, animated: true, completion: nil)
         
     }
+    
     @IBAction func pickImageFromURL(_ sender: UIBarButtonItem) {
+        
+        let url = URL(string: "http://upload.wikimedia.org/wikipedia/commons/0/0c/Scarlett_Johansson_Césars_2014.jpg")!
+        let session = URLSession.shared
+        let task = session.dataTask(with: url, completionHandler: {
+        (data , responce , error) in
+            if data != nil {
+                let image = UIImage(data: data!)
+                if(image != nil) {
+                    DispatchQueue.main.async(execute: {
+                    self.imageView.image = image
+                    })
+                }
+            }
+        })
+        task.resume()
+    }
+    
+    @IBAction func shareImage(_ sender: UIBarButtonItem) {
+        if let image = imageView.image {
+            let controller = UIActivityViewController(activityItems: [image], applicationActivities: nil)
+            self.present(controller, animated: true, completion: nil)
+        }
+    }
+    @IBAction func addTextToPhoto(_ sender: UIBarButtonItem) {
+        
+        if textField.text != nil {
+            textLabel.text = textField.text
+        }
+        
     }
 }
 

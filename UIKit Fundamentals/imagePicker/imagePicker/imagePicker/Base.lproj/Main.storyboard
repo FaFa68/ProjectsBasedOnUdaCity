@@ -24,6 +24,7 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FWm-Id-S9d">
                                 <rect key="frame" x="16" y="40" width="288" height="280"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="280" id="69o-g3-GsL"/>
                                 </constraints>
@@ -31,29 +32,54 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GI4-mB-mBV">
                                 <rect key="frame" x="0.0" y="524" width="320" height="44"/>
                                 <items>
-                                    <barButtonItem title="Album" id="ToK-Cx-DyJ">
+                                    <barButtonItem title="Album" width="63" id="ToK-Cx-DyJ">
+                                        <color key="tintColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <action selector="pickImageFromAlbum:" destination="BYZ-38-t0r" id="RXL-0C-a4O"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="baX-yQ-8M7"/>
-                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="T6s-ZC-xIe"/>
-                                    <barButtonItem systemItem="camera" id="XG7-TN-xcu">
-                                        <connections>
-                                            <action selector="pickImageFromCamera:" destination="BYZ-38-t0r" id="vhh-7b-c2B"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="vN1-NN-iKk"/>
-                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="LUp-9Q-xQN"/>
-                                    <barButtonItem title="URL" id="0fm-lB-O0g">
+                                    <barButtonItem title="URL" width="53.5" id="0fm-lB-O0g">
+                                        <color key="tintColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <action selector="pickImageFromURL:" destination="BYZ-38-t0r" id="dg6-DN-5fq"/>
                                         </connections>
                                     </barButtonItem>
+                                    <barButtonItem systemItem="camera" id="XG7-TN-xcu">
+                                        <color key="tintColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="pickImageFromCamera:" destination="BYZ-38-t0r" id="vhh-7b-c2B"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Share" width="64.5" id="RO4-Ye-LxG">
+                                        <color key="tintColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="shareImage:" destination="BYZ-38-t0r" id="To1-ev-XOL"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Add" width="44" id="z5d-Qt-qyC">
+                                        <color key="tintColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="addTextToPhoto:" destination="BYZ-38-t0r" id="wX5-B2-WjB"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U4t-uL-kkq">
+                                <rect key="frame" x="90" y="264" width="126" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d0i-Yp-fD5">
+                                <rect key="frame" x="16" y="328" width="288" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="FWm-Id-S9d" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="02c-3o-9TG"/>
                             <constraint firstItem="FWm-Id-S9d" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="H7h-sz-dp9"/>
@@ -65,6 +91,8 @@
                     </view>
                     <connections>
                         <outlet property="imageView" destination="FWm-Id-S9d" id="Ywy-9M-ltt"/>
+                        <outlet property="textField" destination="d0i-Yp-fD5" id="mVa-br-gKX"/>
+                        <outlet property="textLabel" destination="U4t-uL-kkq" id="et4-e8-fHb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
