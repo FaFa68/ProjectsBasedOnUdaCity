@@ -10,26 +10,25 @@ import UIKit
 
 class ChoiceViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    @IBAction func playRock(_ sender: UIButton) {
+        let viewController = storyboard?.instantiateViewController(withIdentifier: "ResultViewController")  as! ResultViewController
+        viewController.userChoice =  getUserShape(sender)
+        present(viewController, animated: true, completion: nil)
+    }
+    @IBAction private func playPaper(_ sender: UIButton){
+        performSegue(withIdentifier: "play", sender: sender)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "play" {
+            let viewController = segue.destination as! ResultViewController
+            viewController.userChoice = getUserShape(sender as! UIButton)
+        }
     }
-    */
+
+    private func getUserShape(_ sender: UIButton) -> Shape {
+        let shape = sender.title(for: UIControlState())!
+        return Shape(rawValue: shape)!
+    }
 
 }

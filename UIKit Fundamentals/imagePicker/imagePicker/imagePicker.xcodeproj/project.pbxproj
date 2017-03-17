@@ -7,27 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1137B5611E7AAB83005F683B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1137B5601E7AAB83005F683B /* AppDelegate.swift */; };
-		1137B5661E7AAB83005F683B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1137B5641E7AAB83005F683B /* Main.storyboard */; };
-		1137B5681E7AAB83005F683B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1137B5671E7AAB83005F683B /* Assets.xcassets */; };
-		1137B56B1E7AAB83005F683B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1137B5691E7AAB83005F683B /* LaunchScreen.storyboard */; };
-		1137B5731E7AAEBD005F683B /* ChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1137B5721E7AAEBD005F683B /* ChoiceViewController.swift */; };
-		1137B5751E7AAF4F005F683B /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1137B5741E7AAF4F005F683B /* ResultViewController.swift */; };
+		1105B9421E7BF45300714C16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1105B9411E7BF45300714C16 /* AppDelegate.swift */; };
+		1105B9441E7BF45300714C16 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1105B9431E7BF45300714C16 /* ViewController.swift */; };
+		1105B9471E7BF45300714C16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1105B9451E7BF45300714C16 /* Main.storyboard */; };
+		1105B9491E7BF45300714C16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1105B9481E7BF45300714C16 /* Assets.xcassets */; };
+		1105B94C1E7BF45300714C16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1105B94A1E7BF45300714C16 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1137B55D1E7AAB83005F683B /* Roshambo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Roshambo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1137B5601E7AAB83005F683B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1137B5651E7AAB83005F683B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1137B5671E7AAB83005F683B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1137B56A1E7AAB83005F683B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		1137B56C1E7AAB83005F683B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1137B5721E7AAEBD005F683B /* ChoiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoiceViewController.swift; sourceTree = "<group>"; };
-		1137B5741E7AAF4F005F683B /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		1105B93E1E7BF45300714C16 /* imagePicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = imagePicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1105B9411E7BF45300714C16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1105B9431E7BF45300714C16 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1105B9461E7BF45300714C16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1105B9481E7BF45300714C16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1105B94B1E7BF45300714C16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1105B94D1E7BF45300714C16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1137B55A1E7AAB83005F683B /* Frameworks */ = {
+		1105B93B1E7BF45300714C16 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,74 +35,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1137B5541E7AAB83005F683B = {
+		1105B9351E7BF45300714C16 = {
 			isa = PBXGroup;
 			children = (
-				1137B55F1E7AAB83005F683B /* Roshambo */,
-				1137B55E1E7AAB83005F683B /* Products */,
+				1105B9401E7BF45300714C16 /* imagePicker */,
+				1105B93F1E7BF45300714C16 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		1137B55E1E7AAB83005F683B /* Products */ = {
+		1105B93F1E7BF45300714C16 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1137B55D1E7AAB83005F683B /* Roshambo.app */,
+				1105B93E1E7BF45300714C16 /* imagePicker.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1137B55F1E7AAB83005F683B /* Roshambo */ = {
+		1105B9401E7BF45300714C16 /* imagePicker */ = {
 			isa = PBXGroup;
 			children = (
-				1137B5601E7AAB83005F683B /* AppDelegate.swift */,
-				1137B5721E7AAEBD005F683B /* ChoiceViewController.swift */,
-				1137B5741E7AAF4F005F683B /* ResultViewController.swift */,
-				1137B5641E7AAB83005F683B /* Main.storyboard */,
-				1137B5671E7AAB83005F683B /* Assets.xcassets */,
-				1137B5691E7AAB83005F683B /* LaunchScreen.storyboard */,
-				1137B56C1E7AAB83005F683B /* Info.plist */,
+				1105B9411E7BF45300714C16 /* AppDelegate.swift */,
+				1105B9431E7BF45300714C16 /* ViewController.swift */,
+				1105B9451E7BF45300714C16 /* Main.storyboard */,
+				1105B9481E7BF45300714C16 /* Assets.xcassets */,
+				1105B94A1E7BF45300714C16 /* LaunchScreen.storyboard */,
+				1105B94D1E7BF45300714C16 /* Info.plist */,
 			);
-			path = Roshambo;
+			path = imagePicker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1137B55C1E7AAB83005F683B /* Roshambo */ = {
+		1105B93D1E7BF45300714C16 /* imagePicker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1137B56F1E7AAB83005F683B /* Build configuration list for PBXNativeTarget "Roshambo" */;
+			buildConfigurationList = 1105B9501E7BF45300714C16 /* Build configuration list for PBXNativeTarget "imagePicker" */;
 			buildPhases = (
-				1137B5591E7AAB83005F683B /* Sources */,
-				1137B55A1E7AAB83005F683B /* Frameworks */,
-				1137B55B1E7AAB83005F683B /* Resources */,
+				1105B93A1E7BF45300714C16 /* Sources */,
+				1105B93B1E7BF45300714C16 /* Frameworks */,
+				1105B93C1E7BF45300714C16 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Roshambo;
-			productName = Roshambo;
-			productReference = 1137B55D1E7AAB83005F683B /* Roshambo.app */;
+			name = imagePicker;
+			productName = imagePicker;
+			productReference = 1105B93E1E7BF45300714C16 /* imagePicker.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		1137B5551E7AAB83005F683B /* Project object */ = {
+		1105B9361E7BF45300714C16 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = FaFa;
 				TargetAttributes = {
-					1137B55C1E7AAB83005F683B = {
+					1105B93D1E7BF45300714C16 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = L4QTG8RQKH;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 1137B5581E7AAB83005F683B /* Build configuration list for PBXProject "Roshambo" */;
+			buildConfigurationList = 1105B9391E7BF45300714C16 /* Build configuration list for PBXProject "imagePicker" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -112,55 +109,54 @@
 				en,
 				Base,
 			);
-			mainGroup = 1137B5541E7AAB83005F683B;
-			productRefGroup = 1137B55E1E7AAB83005F683B /* Products */;
+			mainGroup = 1105B9351E7BF45300714C16;
+			productRefGroup = 1105B93F1E7BF45300714C16 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1137B55C1E7AAB83005F683B /* Roshambo */,
+				1105B93D1E7BF45300714C16 /* imagePicker */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1137B55B1E7AAB83005F683B /* Resources */ = {
+		1105B93C1E7BF45300714C16 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1137B56B1E7AAB83005F683B /* LaunchScreen.storyboard in Resources */,
-				1137B5681E7AAB83005F683B /* Assets.xcassets in Resources */,
-				1137B5661E7AAB83005F683B /* Main.storyboard in Resources */,
+				1105B94C1E7BF45300714C16 /* LaunchScreen.storyboard in Resources */,
+				1105B9491E7BF45300714C16 /* Assets.xcassets in Resources */,
+				1105B9471E7BF45300714C16 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1137B5591E7AAB83005F683B /* Sources */ = {
+		1105B93A1E7BF45300714C16 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1137B5731E7AAEBD005F683B /* ChoiceViewController.swift in Sources */,
-				1137B5611E7AAB83005F683B /* AppDelegate.swift in Sources */,
-				1137B5751E7AAF4F005F683B /* ResultViewController.swift in Sources */,
+				1105B9441E7BF45300714C16 /* ViewController.swift in Sources */,
+				1105B9421E7BF45300714C16 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1137B5641E7AAB83005F683B /* Main.storyboard */ = {
+		1105B9451E7BF45300714C16 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1137B5651E7AAB83005F683B /* Base */,
+				1105B9461E7BF45300714C16 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		1137B5691E7AAB83005F683B /* LaunchScreen.storyboard */ = {
+		1105B94A1E7BF45300714C16 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1137B56A1E7AAB83005F683B /* Base */,
+				1105B94B1E7BF45300714C16 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -168,7 +164,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		1137B56D1E7AAB83005F683B /* Debug */ = {
+		1105B94E1E7BF45300714C16 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -217,7 +213,7 @@
 			};
 			name = Debug;
 		};
-		1137B56E1E7AAB83005F683B /* Release */ = {
+		1105B94F1E7BF45300714C16 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -259,27 +255,27 @@
 			};
 			name = Release;
 		};
-		1137B5701E7AAB83005F683B /* Debug */ = {
+		1105B9511E7BF45300714C16 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = L4QTG8RQKH;
-				INFOPLIST_FILE = Roshambo/Info.plist;
+				INFOPLIST_FILE = imagePicker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = FaFa.Roshambo;
+				PRODUCT_BUNDLE_IDENTIFIER = FaFa.imagePicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		1137B5711E7AAB83005F683B /* Release */ = {
+		1105B9521E7BF45300714C16 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = L4QTG8RQKH;
-				INFOPLIST_FILE = Roshambo/Info.plist;
+				INFOPLIST_FILE = imagePicker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = FaFa.Roshambo;
+				PRODUCT_BUNDLE_IDENTIFIER = FaFa.imagePicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -288,24 +284,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1137B5581E7AAB83005F683B /* Build configuration list for PBXProject "Roshambo" */ = {
+		1105B9391E7BF45300714C16 /* Build configuration list for PBXProject "imagePicker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1137B56D1E7AAB83005F683B /* Debug */,
-				1137B56E1E7AAB83005F683B /* Release */,
+				1105B94E1E7BF45300714C16 /* Debug */,
+				1105B94F1E7BF45300714C16 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1137B56F1E7AAB83005F683B /* Build configuration list for PBXNativeTarget "Roshambo" */ = {
+		1105B9501E7BF45300714C16 /* Build configuration list for PBXNativeTarget "imagePicker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1137B5701E7AAB83005F683B /* Debug */,
-				1137B5711E7AAB83005F683B /* Release */,
+				1105B9511E7BF45300714C16 /* Debug */,
+				1105B9521E7BF45300714C16 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 1137B5551E7AAB83005F683B /* Project object */;
+	rootObject = 1105B9361E7BF45300714C16 /* Project object */;
 }
