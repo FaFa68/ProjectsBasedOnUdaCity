@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController , UINavigationControllerDelegate ,UIImagePickerControllerDelegate {
+class ViewController: UIViewController , UINavigationControllerDelegate ,UIImagePickerControllerDelegate ,UITextFieldDelegate {
 
     
     @IBOutlet weak var imageView: UIImageView!
@@ -17,6 +17,7 @@ class ViewController: UIViewController , UINavigationControllerDelegate ,UIImage
     @IBOutlet weak var textField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.textField.delegate = self
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -86,6 +87,11 @@ class ViewController: UIViewController , UINavigationControllerDelegate ,UIImage
             textLabel.text = textField.text
         }
         
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
     }
 }
 
