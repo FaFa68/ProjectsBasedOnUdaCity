@@ -12,6 +12,7 @@
 		119945B71E7D8D8C00929744 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 119945B61E7D8D8C00929744 /* Assets.xcassets */; };
 		119945BA1E7D8D8C00929744 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 119945B81E7D8D8C00929744 /* LaunchScreen.storyboard */; };
 		119945C21E7D8F3500929744 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119945C11E7D8F3500929744 /* TimerViewController.swift */; };
+		119945C41E7DA99400929744 /* Beep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 119945C31E7DA99400929744 /* Beep.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		119945B91E7D8D8C00929744 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		119945BB1E7D8D8C00929744 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		119945C11E7D8F3500929744 /* TimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		119945C31E7DA99400929744 /* Beep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Beep.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				119945B61E7D8D8C00929744 /* Assets.xcassets */,
 				119945B81E7D8D8C00929744 /* LaunchScreen.storyboard */,
 				119945BB1E7D8D8C00929744 /* Info.plist */,
+				119945C31E7DA99400929744 /* Beep.mp3 */,
 			);
 			path = CountDownTimer;
 			sourceTree = "<group>";
@@ -125,6 +128,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				119945BA1E7D8D8C00929744 /* LaunchScreen.storyboard in Resources */,
+				119945C41E7DA99400929744 /* Beep.mp3 in Resources */,
 				119945B71E7D8D8C00929744 /* Assets.xcassets in Resources */,
 				119945B51E7D8D8C00929744 /* Main.storyboard in Resources */,
 			);

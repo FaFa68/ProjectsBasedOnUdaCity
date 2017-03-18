@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class TimerViewController: UIViewController {
     
@@ -18,11 +19,15 @@ class TimerViewController: UIViewController {
     
     var seconds = 30
     var timer = Timer()
+
+    var audioPlayer = AVAudioPlayer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        do{
+            let audioPath = Bundle.main.path(forResource: "Beep", ofType: ".mp3")
+            try? audioPlayer = AVAudioPlayer(contentsOf: URL(fileURLWithPath: audioPath!))
+        }
     }
 
     @IBAction func sliderTimer(_ sender: UISlider) {
@@ -46,7 +51,7 @@ class TimerViewController: UIViewController {
     }
     func count() {
             seconds -= 1
-            secondsLabel.text = "\(seconds)"
+            secondsLabel.text = "\(seconds) Seconds"
         if seconds == 0 {
             timer.invalidate()
 
@@ -54,6 +59,7 @@ class TimerViewController: UIViewController {
             startButton.alpha = 1
             secondsSlider.isEnabled = true
             secondsSlider.alpha = 1
+            audioPlayer.play()
         }
             
 }
@@ -69,12 +75,12 @@ class TimerViewController: UIViewController {
         secondsSlider.alpha = 1
         startButton.isEnabled = true
         startButton.alpha = 1
-
+        if audioPlayer.isPlaying {
+        audioPlayer.stop()
+        }
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
+           }
 }
