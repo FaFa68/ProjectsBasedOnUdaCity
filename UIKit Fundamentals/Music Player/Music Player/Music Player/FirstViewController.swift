@@ -9,10 +9,11 @@
 import UIKit
 import AVFoundation
 
+var Songs: [String] = []
+var audioPlayer = AVAudioPlayer()
+var thisSong = 0
+
 class FirstViewController: UIViewController , UITableViewDelegate ,UITableViewDataSource {
-    
-    var Songs: [String] = []
-    var audioPlayer = AVAudioPlayer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +22,6 @@ class FirstViewController: UIViewController , UITableViewDelegate ,UITableViewDa
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -40,6 +40,7 @@ class FirstViewController: UIViewController , UITableViewDelegate ,UITableViewDa
             let audioPath = Bundle.main.path(forResource: Songs[indexPath.row], ofType: ".mp3")
             try audioPlayer = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: audioPath!) as URL)
             audioPlayer.play()
+            thisSong = indexPath.row
         } catch  {
             print("Error")
         }
@@ -56,8 +57,10 @@ class FirstViewController: UIViewController , UITableViewDelegate ,UITableViewDa
                     mySong = findString[findString.count - 1]
                     mySong = mySong.replacingOccurrences(of: "%20", with: " ")
                     mySong = mySong.replacingOccurrences(of: ".mp3", with: "")
+//                    print(Songs.count)
                     Songs.append(mySong)
-                    print(mySong)
+//                    print(mySong)
+//                    print(Songs.count)
                 }
             }
         } catch  {
