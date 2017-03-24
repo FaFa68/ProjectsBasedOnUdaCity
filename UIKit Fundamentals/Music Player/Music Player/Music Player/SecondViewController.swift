@@ -18,24 +18,36 @@ class SecondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         songLabel.text = Songs[thisSong]
+        imageView.image = UIImage(named: photo[songLabel.text!]!)
+        updateTimeSlider()
+        
     }
+    var photo: [String :  String] = ["Alireza-JJ-Maro-Eshtebah-Nagir": "JJ",
+                                     "Ho3ein-Ye-Joore-Digeh" : "Hosein",
+                                     "Paydar-Yaghe" : "Paydar",
+                                     "Tohi-Dorehami" : "Tohi",
+                                     "Yas-Zende-Bad-Iran": "Yas" ]
 
     @IBAction func playSong(_ sender: UIButton) {
         if audioPlayer.isPlaying == false {
             audioPlayer.play()
+            updateTimeSlider()
             songLabel.text = Songs[thisSong]
+            imageView.image = UIImage(named: photo[songLabel.text!]!)
         }
     }
     @IBAction func pauseSong(_ sender: UIButton) {
         if audioPlayer.isPlaying == true {
             audioPlayer.pause()
+            updateTimeSlider()
         }
     }
     @IBAction func prevSong(_ sender: UIButton) {
-        if thisSong == 1 {
+        if thisSong != 0 {
             playThis(thisOne: Songs[thisSong - 1])
             thisSong += 1
             songLabel.text = Songs[thisSong]
+            imageView.image = UIImage(named: photo[songLabel.text!]!)
         }
         else {
          //   thisSong = Songs.count
@@ -47,6 +59,7 @@ class SecondViewController: UIViewController {
             playThis(thisOne: Songs[thisSong + 1])
             thisSong += 1
             songLabel.text = Songs[thisSong]
+            imageView.image = UIImage(named: photo[songLabel.text!]!)
         }
         else{
            // thisSong = 1
@@ -58,9 +71,7 @@ class SecondViewController: UIViewController {
             let audioPath = Bundle.main.path(forResource: thisOne, ofType: ".mp3")
             try audioPlayer = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: audioPath!) as URL)
             audioPlayer.play()
-            timeSlider.setValue(Float(audioPlayer.currentTime), animated: true)
-            timeSlider.minimumValue = 0
-            timeSlider.maximumValue = Float(audioPlayer.duration)
+            updateTimeSlider()
 
         } catch  {
             print("Error")
@@ -75,11 +86,15 @@ class SecondViewController: UIViewController {
         audioPlayer.currentTime = TimeInterval(sender.value)
 //        sender.setValue(Float(audioPlayer.currentTime), animated: true)
     }
+   public func updateTimeSlider(){
     
+        timeSlider.minimumValue = 0
+        timeSlider.maximumValue = Float(audioPlayer.duration)
+        timeSlider.setValue(Float(audioPlayer.currentTime), animated: true)
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 }
 

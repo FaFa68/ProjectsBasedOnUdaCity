@@ -13,6 +13,12 @@
 		110B783D1E82EFC400D02E9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 110B783B1E82EFC400D02E9A /* Main.storyboard */; };
 		110B783F1E82EFC400D02E9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 110B783E1E82EFC400D02E9A /* Assets.xcassets */; };
 		110B78421E82EFC400D02E9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 110B78401E82EFC400D02E9A /* LaunchScreen.storyboard */; };
+		118AD1281E8561AE009464A5 /* Screen Shot 2017-03-24 at 15.15.28.png in Resources */ = {isa = PBXBuildFile; fileRef = 118AD1271E8561AE009464A5 /* Screen Shot 2017-03-24 at 15.15.28.png */; };
+		118AD12E1E8565AB009464A5 /* Hosein.png in Resources */ = {isa = PBXBuildFile; fileRef = 118AD12A1E8565AB009464A5 /* Hosein.png */; };
+		118AD12F1E8565AB009464A5 /* Paydar.png in Resources */ = {isa = PBXBuildFile; fileRef = 118AD12B1E8565AB009464A5 /* Paydar.png */; };
+		118AD1301E8565AB009464A5 /* Tohi.png in Resources */ = {isa = PBXBuildFile; fileRef = 118AD12C1E8565AB009464A5 /* Tohi.png */; };
+		118AD1311E8565AB009464A5 /* Yas.png in Resources */ = {isa = PBXBuildFile; fileRef = 118AD12D1E8565AB009464A5 /* Yas.png */; };
+		118AD1331E85667D009464A5 /* JJ.png in Resources */ = {isa = PBXBuildFile; fileRef = 118AD1321E85667D009464A5 /* JJ.png */; };
 		11B2E86F1E83E6A400A758D6 /* Alireza-JJ-Maro-Eshtebah-Nagir.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 11B2E86A1E83E6A400A758D6 /* Alireza-JJ-Maro-Eshtebah-Nagir.mp3 */; };
 		11B2E8701E83E6A400A758D6 /* Ho3ein-Ye-Joore-Digeh.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 11B2E86B1E83E6A400A758D6 /* Ho3ein-Ye-Joore-Digeh.mp3 */; };
 		11B2E8711E83E6A400A758D6 /* Paydar-Yaghe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 11B2E86C1E83E6A400A758D6 /* Paydar-Yaghe.mp3 */; };
@@ -29,6 +35,12 @@
 		110B783E1E82EFC400D02E9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		110B78411E82EFC400D02E9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		110B78431E82EFC400D02E9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		118AD1271E8561AE009464A5 /* Screen Shot 2017-03-24 at 15.15.28.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2017-03-24 at 15.15.28.png"; sourceTree = "<group>"; };
+		118AD12A1E8565AB009464A5 /* Hosein.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hosein.png; sourceTree = "<group>"; };
+		118AD12B1E8565AB009464A5 /* Paydar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Paydar.png; sourceTree = "<group>"; };
+		118AD12C1E8565AB009464A5 /* Tohi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tohi.png; sourceTree = "<group>"; };
+		118AD12D1E8565AB009464A5 /* Yas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Yas.png; sourceTree = "<group>"; };
+		118AD1321E85667D009464A5 /* JJ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = JJ.png; sourceTree = "<group>"; };
 		11B2E86A1E83E6A400A758D6 /* Alireza-JJ-Maro-Eshtebah-Nagir.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Alireza-JJ-Maro-Eshtebah-Nagir.mp3"; sourceTree = "<group>"; };
 		11B2E86B1E83E6A400A758D6 /* Ho3ein-Ye-Joore-Digeh.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Ho3ein-Ye-Joore-Digeh.mp3"; sourceTree = "<group>"; };
 		11B2E86C1E83E6A400A758D6 /* Paydar-Yaghe.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Paydar-Yaghe.mp3"; sourceTree = "<group>"; };
@@ -71,11 +83,26 @@
 				110B78391E82EFC400D02E9A /* SecondViewController.swift */,
 				110B783B1E82EFC400D02E9A /* Main.storyboard */,
 				110B783E1E82EFC400D02E9A /* Assets.xcassets */,
+				118AD1271E8561AE009464A5 /* Screen Shot 2017-03-24 at 15.15.28.png */,
 				110B78401E82EFC400D02E9A /* LaunchScreen.storyboard */,
+				118AD1291E8565AB009464A5 /* Photos */,
 				11B2E8691E83E6A400A758D6 /* Song */,
 				110B78431E82EFC400D02E9A /* Info.plist */,
 			);
 			path = "Music Player";
+			sourceTree = "<group>";
+		};
+		118AD1291E8565AB009464A5 /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				118AD12A1E8565AB009464A5 /* Hosein.png */,
+				118AD12B1E8565AB009464A5 /* Paydar.png */,
+				118AD12C1E8565AB009464A5 /* Tohi.png */,
+				118AD12D1E8565AB009464A5 /* Yas.png */,
+				118AD1321E85667D009464A5 /* JJ.png */,
+			);
+			name = Photos;
+			path = Song/Photos;
 			sourceTree = "<group>";
 		};
 		11B2E8691E83E6A400A758D6 /* Song */ = {
@@ -150,11 +177,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				118AD1311E8565AB009464A5 /* Yas.png in Resources */,
 				11B2E8721E83E6A400A758D6 /* Tohi-Dorehami.mp3 in Resources */,
+				118AD12E1E8565AB009464A5 /* Hosein.png in Resources */,
+				118AD1331E85667D009464A5 /* JJ.png in Resources */,
 				11B2E86F1E83E6A400A758D6 /* Alireza-JJ-Maro-Eshtebah-Nagir.mp3 in Resources */,
+				118AD1301E8565AB009464A5 /* Tohi.png in Resources */,
 				11B2E8711E83E6A400A758D6 /* Paydar-Yaghe.mp3 in Resources */,
 				11B2E8701E83E6A400A758D6 /* Ho3ein-Ye-Joore-Digeh.mp3 in Resources */,
 				110B78421E82EFC400D02E9A /* LaunchScreen.storyboard in Resources */,
+				118AD1281E8561AE009464A5 /* Screen Shot 2017-03-24 at 15.15.28.png in Resources */,
+				118AD12F1E8565AB009464A5 /* Paydar.png in Resources */,
 				110B783F1E82EFC400D02E9A /* Assets.xcassets in Resources */,
 				110B783D1E82EFC400D02E9A /* Main.storyboard in Resources */,
 				11B2E8731E83E6A400A758D6 /* Yas-Zende-Bad-Iran.mp3 in Resources */,

@@ -32,7 +32,7 @@
                                         <rect key="frame" x="0.0" y="28" width="365" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uXA-0V-xx7" id="0mG-ix-g80">
-                                            <rect key="frame" x="0.0" y="0.0" width="365" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="365" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -75,7 +75,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NSt-0l-bv8">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen Shot 2017-03-24 at 15.15.28" translatesAutoresizingMaskIntoConstraints="NO" id="NSt-0l-bv8">
                                 <rect key="frame" x="32" y="68" width="296" height="240"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="240" id="mSx-hc-KS0"/>
@@ -120,6 +120,9 @@
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="QLY-uL-deW">
                                 <rect key="frame" x="63" y="506" width="234" height="31"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" updatesFrequently="YES"/>
+                                </accessibility>
                                 <connections>
                                     <action selector="timeSlider:" destination="8rJ-Kc-sve" eventType="valueChanged" id="3DD-OL-yBz"/>
                                 </connections>
@@ -144,6 +147,7 @@
                             <constraint firstItem="NSt-0l-bv8" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" constant="68" id="Gdi-DK-epd"/>
                             <constraint firstItem="QLY-uL-deW" firstAttribute="top" secondItem="pdh-sf-YDM" secondAttribute="bottom" constant="21" id="HcH-7M-L7d"/>
                             <constraint firstItem="pdh-sf-YDM" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="49" id="IRS-Bh-Pr4"/>
+                            <constraint firstItem="olq-cq-egI" firstAttribute="top" secondItem="NSt-0l-bv8" secondAttribute="bottom" constant="10" id="Jar-fh-TNv"/>
                             <constraint firstItem="pdh-sf-YDM" firstAttribute="trailing" secondItem="Dcz-0a-tb2" secondAttribute="trailing" id="Jc3-qk-sQn"/>
                             <constraint firstItem="Dcz-0a-tb2" firstAttribute="baseline" secondItem="F61-uo-kY4" secondAttribute="firstBaseline" id="K9S-k0-S7D"/>
                             <constraint firstItem="Dcz-0a-tb2" firstAttribute="top" secondItem="F61-uo-kY4" secondAttribute="top" id="OAM-bH-0KD"/>
@@ -158,6 +162,7 @@
                             <constraint firstItem="XwA-yZ-YcL" firstAttribute="baseline" secondItem="olq-cq-egI" secondAttribute="firstBaseline" id="c4T-zd-K8X"/>
                             <constraint firstItem="XwA-yZ-YcL" firstAttribute="trailing" secondItem="F61-uo-kY4" secondAttribute="trailing" id="jN4-Lb-kGL"/>
                             <constraint firstItem="olq-cq-egI" firstAttribute="leading" secondItem="Dcz-0a-tb2" secondAttribute="leading" id="m4y-Yb-vDM"/>
+                            <constraint firstItem="XwA-yZ-YcL" firstAttribute="top" secondItem="NSt-0l-bv8" secondAttribute="bottom" constant="10" id="tdd-KX-sQq"/>
                             <constraint firstItem="XwA-yZ-YcL" firstAttribute="leading" secondItem="F61-uo-kY4" secondAttribute="leading" id="unT-G9-4z6"/>
                         </constraints>
                     </view>
@@ -193,6 +198,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Screen Shot 2017-03-24 at 15.15.28" width="740" height="730"/>
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
     </resources>
