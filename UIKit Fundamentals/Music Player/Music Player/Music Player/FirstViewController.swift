@@ -12,11 +12,14 @@ import AVFoundation
 var Songs: [String] = []
 var audioPlayer = AVAudioPlayer()
 var thisSong = 0
-
+let firstGradiantView = CAGradientLayer()
 class FirstViewController: UIViewController , UITableViewDelegate ,UITableViewDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        firstGradiantView.colors = [UIColor.black.cgColor , UIColor.yellow.cgColor]
+        firstGradiantView.frame = view.frame
+        view.layer.insertSublayer(firstGradiantView, at: 0)
         getSongName()
     }
     

@@ -15,9 +15,12 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var timeSlider: UISlider!
     @IBOutlet weak var volumeSlider: UISlider!
-    
+    let secondGradiantLayer = CAGradientLayer()
     override func viewDidLoad() {
         super.viewDidLoad()
+        secondGradiantLayer.colors = [UIColor.black.cgColor , UIColor.gray.cgColor]
+        secondGradiantLayer.frame =  view.frame
+        view.layer.insertSublayer(secondGradiantLayer, at: 0)
         songLabel.text = Songs[thisSong]
         imageView.image = UIImage(named: photo[songLabel.text!]!)
         volumeSlider.setThumbImage(UIImage(named: "volume"), for: .normal)
