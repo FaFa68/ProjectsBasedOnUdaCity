@@ -14,11 +14,14 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var songLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var timeSlider: UISlider!
-  
+    @IBOutlet weak var volumeSlider: UISlider!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         songLabel.text = Songs[thisSong]
         imageView.image = UIImage(named: photo[songLabel.text!]!)
+        volumeSlider.setThumbImage(UIImage(named: "volume"), for: .normal)
+        timeSlider.setThumbImage(UIImage(named: "music"), for: .normal)
         updateTimeSlider()
         
     }
@@ -80,6 +83,7 @@ class SecondViewController: UIViewController {
     
     @IBAction func volumeSlider(_ sender: UISlider) {
         audioPlayer.volume = sender.value
+        
     }
     
     @IBAction func timeSlider(_ sender: UISlider) {
@@ -91,6 +95,7 @@ class SecondViewController: UIViewController {
         timeSlider.minimumValue = 0
         timeSlider.maximumValue = Float(audioPlayer.duration)
         timeSlider.setValue(Float(audioPlayer.currentTime), animated: true)
+
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

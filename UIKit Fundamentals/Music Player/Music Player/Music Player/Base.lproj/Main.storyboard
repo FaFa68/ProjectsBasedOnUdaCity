@@ -171,6 +171,7 @@
                         <outlet property="imageView" destination="NSt-0l-bv8" id="IKC-kW-bjb"/>
                         <outlet property="songLabel" destination="0XH-2S-nb8" id="wBX-HA-QE7"/>
                         <outlet property="timeSlider" destination="QLY-uL-deW" id="Ylq-Bv-2jw"/>
+                        <outlet property="volumeSlider" destination="pdh-sf-YDM" id="Kci-Xo-cP8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
