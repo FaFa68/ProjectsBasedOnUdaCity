@@ -27,6 +27,7 @@ class ViewController: UIViewController {
                 FIRAuth.auth()?.signIn(withEmail: emailTextField.text!, password: passwordTextField.text!, completion: {(user , error) in
                     if user != nil {
                         // Sign in successful
+                        self.performSegue(withIdentifier: "segue", sender: self)
                         print("Succesfully Signed in")
                         
                     } else {
@@ -45,6 +46,7 @@ class ViewController: UIViewController {
                 FIRAuth.auth()?.createUser(withEmail: emailTextField.text!, password: passwordTextField.text!, completion: {(user , error) in
                     if user != nil {
                         // Sign in successful
+                        self.performSegue(withIdentifier: "segue", sender: self)
                         print("Successfully Signed up")
                     } else {
                         if let err = error?.localizedDescription {

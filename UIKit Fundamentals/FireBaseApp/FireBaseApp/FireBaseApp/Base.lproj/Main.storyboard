@@ -65,11 +65,43 @@
                         <outlet property="emailTextField" destination="Gew-1l-ean" id="Bqm-a3-dhr"/>
                         <outlet property="passwordTextField" destination="Ihi-ci-u9r" id="dev-lt-zVh"/>
                         <outlet property="segmentControl" destination="bN4-AH-4Du" id="Mol-U4-g8d"/>
+                        <segue destination="SNW-Wl-hYA" kind="show" identifier="segue" id="hFY-IL-fn6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-79.200000000000003" y="137.18140929535232"/>
+        </scene>
+        <!--Logged In View Controller-->
+        <scene sceneID="r1t-Sj-dCc">
+            <objects>
+                <viewController id="SNW-Wl-hYA" customClass="LoggedInViewController" customModule="FireBaseApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3jc-1L-JuA"/>
+                        <viewControllerLayoutGuide type="bottom" id="aOv-dM-73Y"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KuM-eB-454">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="36z-NH-BAZ">
+                                <rect key="frame" x="160" y="318" width="55" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Log Out"/>
+                                <connections>
+                                    <action selector="LogOut:" destination="SNW-Wl-hYA" eventType="touchUpInside" id="Alt-UU-qcS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="LogOut" id="Cwj-Gw-YEd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tG4-Is-QxK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="726" y="137"/>
         </scene>
     </scenes>
 </document>
