@@ -10,15 +10,16 @@ import UIKit
 import  FirebaseAuth
 class LoggedInViewController: UIViewController {
 
-    @IBAction func LogOut(_ sender: UIButton) {
+    @IBOutlet weak var navigationBar: UINavigationBar!
     
+    @IBAction func logOut(_ sender: UIBarButtonItem) {
         try! FIRAuth.auth()?.signOut()
         performSegue(withIdentifier: "LogOut", sender: self)
-    
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        navigationBar.topItem?.title = "Welcome \(FIRAuth.auth()!.currentUser!.email!.substring(to: (FIRAuth.auth()?.currentUser?.email?.characters.index(of: "@"))!))"
         // Do any additional setup after loading the view.
     }
 
